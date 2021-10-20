@@ -1,0 +1,10 @@
+
+<div>
+    <form id="loginForm" method="POST" (ngSubmit)="onLogin()" [formGroup]="loginForm">
+        <p><input type="text" formControlName="login"></p>
+        <div id="loginMsg" [style.display]="isLoginValid()?'none':'block'"><p>Login deve ser preenchido</p></div>
+        <p><input type="password" formControlName="password"></p>
+        <p><button type="submit" [disabled]="!loginForm.valid">Login</button></p>
+    </form>
+</div>
+{{loginForm.status}}

@@ -8,12 +8,12 @@ public class Keyword {
 
     private Integer id;
 
-    private String keyword;
+    private String key;
 
     private List<Term> terms;
 
     public Keyword(String keyword) {
-        this.keyword = keyword;
+        this.key = keyword;
         this.terms = new ArrayList<Term>();
     }
 
@@ -25,12 +25,12 @@ public class Keyword {
         this.id = id;
     }
 
-    public String getKeyword() {
-        return keyword;
+    public String getKey() {
+        return key;
     }
 
-    public void setKeyword(String keyword) {
-        this.keyword = keyword;
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public List<Term> getTerms() {
@@ -46,11 +46,11 @@ public class Keyword {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Keyword keyword1 = (Keyword) o;
-        return Objects.equals(keyword, keyword1.keyword);
+        return Objects.equals(key, keyword1.key);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(keyword);
+        return Objects.hash(key);
     }
 }

@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let keyword of keywords$ | async">
+        <a routerLink="keyword/{{keyword.id}}">{{keyword.id}} -- {{keyword.key}}</a>
+    </li>
+</ul>

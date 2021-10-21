@@ -37,3 +37,4 @@ build/
 ### npm ###
 src/main/resources/static/ngapp/
 node_modules/
+dist/
